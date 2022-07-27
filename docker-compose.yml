@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  tor-proxy:
+    container_name: 'tor-proxy'
+    image: 'tor-proxy:latest'
+    build: .
+    ports:
+      - "7995:7995"
+      - "9050:9050"
