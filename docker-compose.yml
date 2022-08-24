@@ -5,5 +5,5 @@ services:
     image: 'tor-proxy:latest'
     build: .
     ports:
-      - "7995:7995"
+      - "9000:9000"
       - "9050:9050"

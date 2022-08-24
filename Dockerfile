@@ -1,8 +1,8 @@
 FROM python:3.10-slim-buster
 
 RUN \
-    apt update && \
-    apt upgrade && \
+    apt update -y && \
+    apt upgrade -y && \
     apt install -y tor curl && \
     echo "SocksPort 0.0.0.0:9050" >> /etc/tor/torrc && \
     echo "ControlPort 9051" >> /etc/tor/torrc && \
